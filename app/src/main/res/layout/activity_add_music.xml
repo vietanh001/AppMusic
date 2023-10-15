@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".AddMusicActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/text"
+            android:text="Thêm bài hát"
+            android:textSize="23dp"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </TextView>
+
+        <View
+            android:id="@+id/vBack"
+            android:background="@drawable/icon_arrow_back_24"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="650dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Tên bài hát"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etName"
+                android:hint="Tên bài hát"
+                android:textSize="18dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="#B5B5B5"
+                android:background="@drawable/customer_textview"
+                android:layout_width="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/ivImage"
+                android:src="@drawable/icon_image_24"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="180dp"
+                android:layout_height="180dp"/>
+
+            <TextView
+                android:text="Link Youtube"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etLinkYoutube"
+                android:hint="Tên bài hát"
+                android:textSize="18dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="#B5B5B5"
+                android:background="@drawable/customer_textview"
+                android:layout_width="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btCheck"
+                android:text="Check trailer"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/customer_button"
+                android:textColor="#FFF" />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtubePlayerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:autoPlay="false"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:text="Thời lượng"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:hint="Thời lượng"
+                android:textSize="18dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="#B5B5B5"
+                android:background="@drawable/customer_textview"
+                android:layout_width="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Tác giả"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etAuthor"
+                android:hint="Tác giả"
+                android:textSize="18dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="#B5B5B5"
+                android:background="@drawable/customer_textview"
+                android:layout_width="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Thời lượng"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etTime"
+                android:hint="Thời lượng"
+                android:textSize="18dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="#B5B5B5"
+                android:background="@drawable/customer_textview"
+                android:layout_width="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Lời bài hát"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etLyric"
+                android:hint="Lời bài hát"
+                android:textSize="18dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="#B5B5B5"
+                android:background="@drawable/customer_textview"
+                android:layout_width="350dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btAddMusic"
+        android:text="Thêm bài"
+        android:textSize="20dp"
+        android:background="@drawable/customer_button"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

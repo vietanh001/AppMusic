@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayMusicActivity"
+    android:background="@drawable/background_music">
+
+    <ImageButton
+        android:id="@+id/ibNext"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toEndOf="@+id/ibStop"
+        app:layout_constraintTop_toBottomOf="@+id/SeekBar"
+        app:srcCompat="@drawable/icon_skip_next_24" />
+
+    <ImageButton
+        android:id="@+id/ibStop"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="48dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ibPlay"
+        app:layout_constraintTop_toBottomOf="@+id/SeekBar"
+        app:srcCompat="@drawable/icon_stop_24" />
+
+    <ImageButton
+        android:id="@+id/ibPrevious"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTimeCurrent"
+        app:layout_constraintTop_toBottomOf="@+id/SeekBar"
+        app:srcCompat="@drawable/icon_skip_previous_24" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="326dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="64dp"
+        android:text="Tên bài hát"
+        android:textAlignment="center"
+        android:textColor="#EFEAEA"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/SeekBar"
+        android:layout_width="377dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="400dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvTimeCurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="00 : 00"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvTimeEnd"
+        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SeekBar"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/tvTimeEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="00 : 00"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SeekBar"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <ImageButton
+        android:id="@+id/ibPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ibPrevious"
+        app:layout_constraintTop_toBottomOf="@+id/SeekBar"
+        app:srcCompat="@drawable/icon_pause_24" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/picture"
+        android:layout_width="243dp"
+        android:layout_height="269dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/music"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        app:layout_constraintVertical_bias="0.128" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

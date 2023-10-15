@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1061450493796",
+    "firebase_url": "https://audiostreaming-11878-default-rtdb.firebaseio.com",
+    "project_id": "audiostreaming-11878",
+    "storage_bucket": "audiostreaming-11878.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061450493796:android:dc22270aa94f7fe4bd9471",
+        "android_client_info": {
+          "package_name": "com.example.audiostreaming"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSFm547vrmDgMgPHSG1hhCfweFK-09HPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
